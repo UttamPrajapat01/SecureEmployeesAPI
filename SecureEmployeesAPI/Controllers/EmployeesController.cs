@@ -67,7 +67,8 @@ namespace SecureEmployeeAPI.Controllers
             using var cmd = new NpgsqlCommand(sql, conn);
             cmd.Parameters.AddWithValue("@name", emp.Name);
             cmd.Parameters.AddWithValue("@dept", emp.Department);
-
+            
+    // Open Connection to using the connection object
             conn.Open();
             cmd.ExecuteNonQuery();
 
