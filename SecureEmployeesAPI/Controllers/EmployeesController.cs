@@ -55,7 +55,7 @@ namespace SecureEmployeeAPI.Controllers
 
             return Ok(list);
         }
-
+        //this api for the validdaeantiforgerytoekn
         // ✅ CSRF Protected POST
         [HttpPost]
         [ValidateAntiForgeryToken]
