@@ -8,7 +8,7 @@ namespace SecureEmployeeAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [EnableRateLimiting("api-limit")]   // DoS Protection
+    [EnableRateLimiting("api-limit")] 
     public class EmployeesController : ControllerBase
     {
         private readonly string _conn;
