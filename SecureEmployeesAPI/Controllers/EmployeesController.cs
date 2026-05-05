@@ -68,7 +68,7 @@ namespace SecureEmployeeAPI.Controllers
             cmd.Parameters.AddWithValue("@name", emp.Name);
             cmd.Parameters.AddWithValue("@dept", emp.Department);
             
-    // Open Connection to using the connection object with the relevant parameter
+
             conn.Open();
             cmd.ExecuteNonQuery();
 
