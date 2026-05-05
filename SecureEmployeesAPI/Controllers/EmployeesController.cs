@@ -19,7 +19,7 @@ namespace SecureEmployeeAPI.Controllers
             _conn = config.GetConnectionString("PostgresConnection");
             _antiforgery = antiforgery;
         }
-        // Generate CSRF Token 
+       
         // ✅ Generate CSRF Token
         [HttpGet("token")]
         public IActionResult GetToken()
